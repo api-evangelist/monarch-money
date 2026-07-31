@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+host: https://www.monarch.com
+notes: >-
+  Probed the standard /.well-known discovery surface on the primary host. No
+  well-known documents are published; /security returns 403 to automated
+  clients and /.well-known/security.txt is 404. The trust.monarch.com host
+  serves a SafeBase single-page app whose /.well-known path returns the SPA
+  shell rather than a real RFC 9116 security.txt, so it is not indexed here.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

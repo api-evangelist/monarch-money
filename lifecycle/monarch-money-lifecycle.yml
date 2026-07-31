@@ -1,0 +1,12 @@
+generated: '2026-07-20'
+method: searched
+source: https://status.monarch.com/
+notes: >-
+  Monarch (Monarch Money) is a consumer personal-finance app with no versioned
+  public developer API, so there is no published API versioning or deprecation
+  policy. It does operate a public status page.
+versioning: null
+deprecation: null
+sla: null
+status_page: https://status.monarch.com/
+deprecated_operations: []

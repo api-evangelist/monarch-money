@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://pypi.org/project/monarchmoney/
+notes: >-
+  Monarch (Monarch Money) does not publish a first-party client SDK. It is a
+  consumer personal-finance app with no documented public developer API. The
+  package below is a COMMUNITY / UNOFFICIAL library that reverse-engineers the
+  app's private GraphQL backend; it is not maintained or endorsed by Monarch,
+  so official is false. No SDKs pointer is emitted for this provider.
+packages:
+- language: python
+  registry: pypi
+  name: monarchmoney
+  url: https://pypi.org/project/monarchmoney/
+  install: pip install monarchmoney
+  source: https://github.com/hammem/monarchmoney
+  official: false
+  maintainer: hammem (community)
+  license: MIT
+  description: >-
+    Unofficial Python library for accessing Monarch Money data (accounts,
+    transactions, budgets) via the app's private GraphQL API.

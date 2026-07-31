@@ -1,8 +1,18 @@
 aid: monarch-money
 name: Monarch Money
-description: 'Monarch Money is a company surfaced as a portfolio company of accel, forerunner-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  Monarch (formerly Monarch Money) is a subscription personal-finance app for
+  budgeting, net-worth and account tracking, investment monitoring, goals,
+  forecasting, and collaborative money management for couples and financial
+  professionals. Backed by Accel and Forerunner Ventures, it connects to users'
+  bank, credit-card, loan, and investment accounts through vetted aggregation
+  partners with read-only permissions, and positions itself as a privacy-first,
+  ad-free alternative to Mint and similar apps. Monarch publishes no documented
+  public developer API; programmatic access exists only via an unofficial
+  community Python library that reverse-engineers the app's private GraphQL
+  backend. The company operates a public status page, a SafeBase Trust Center,
+  and is SOC 2 Type 2 certified. This profile was surfaced as a VC portfolio
+  lead and enriched from Monarch's public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/monarch-money/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +21,29 @@ x-backed-by:
 - forerunner-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.sanity.io/images/mdewiujj/production/42e4e4b2c48f8120fd3102146cfb6cd334b3fd8a-1200x630.jpg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Personal Finance
+- Budgeting
+- Money Management
+- Consumer
+- Trust Center
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +52,45 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.monarchmoney.com/
+  url: https://www.monarch.com/
+- type: Pricing
+  url: https://www.monarch.com/pricing
+- type: SignUp
+  url: https://app.monarch.com/signup
+- type: Login
+  url: https://app.monarch.com/login
+- type: TermsOfService
+  url: https://www.monarch.com/terms
+- type: PrivacyPolicy
+  url: https://www.monarch.com/privacy
+- type: Blog
+  url: https://www.monarch.com/blog
+- type: Support
+  url: https://help.monarch.com/hc/en-us
+- type: HelpCenter
+  url: https://help.monarch.com/hc/en-us
+- type: StatusPage
+  url: https://status.monarch.com/
+- type: ChangeLog
+  url: https://www.monarch.com/whats-new
+- type: ChangeLog
+  url: changelog/monarch-money-changelog.yml
+- type: Lifecycle
+  url: lifecycle/monarch-money-lifecycle.yml
+- type: Security
+  url: https://www.monarch.com/security
+- type: Compliance
+  url: https://www.monarch.com/security
+- type: TrustCenter
+  url: security/monarch-money-trust-center.yml
+- type: DomainSecurity
+  url: security/monarch-money-domain-security.yml
+- type: Packages
+  url: packages/monarch-money-packages.yml
+- type: WellKnown
+  url: well-known/monarch-money-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
